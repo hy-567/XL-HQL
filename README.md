@@ -31,13 +31,13 @@ If you want to use xlnet/albert/gpt2 model , you install related pre-trained mod
 Mixed 
 
 ~~~
-python train.py --do_train --tepoch 40 --bS 32 --accumulate_gradients 2 --bert_type_abb uS --lr 0.001 --lr_bert 0.00001 --seed 1 --num_target_layers 1 
+python train.py --do_train --tepoch 40 --bS 32 --accumulate_gradients 2  --lr 0.001 --lr_bert 0.00001 --seed 1 --num_target_layers 1 --model_type xlnet
 ~~~
 
 Cross-project
 
 ~~~
-python train.py --do_train --tepoch 40 --bS 32 --accumulate_gradients 2 --bert_type_abb uS --lr 0.001 --lr_bert 0.00001 --seed 1 --num_target_layers 1 --project
+python train.py --do_train --tepoch 40 --bS 32 --accumulate_gradients 2  --lr 0.001 --lr_bert 0.00001 --seed 1 --num_target_layers 1 --model_type xlnet --project
 ~~~
 
 ## Test
